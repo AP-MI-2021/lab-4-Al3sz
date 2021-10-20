@@ -13,6 +13,16 @@ def intersect(l1: list[int], l2: list[int]) -> list[int]:
                 l_final.append(l1[i])
     return l_final
 
+def palind(l1: list[int], l2: list[int]) -> list[int]:
+    if len(l1) < len(l2):
+        lenmin = len(l1)
+    else:
+        lenmin = len(l2)
+    listaf = []
+    for i in range(l2):
+        if l1[i] == l1[i::-1]:
+            listaf.append(l1+l2)
+    return lista f
 def citire_lista(lista_string: list[int]) -> list[int]:
     lista = []
     len_lista = lista_string.split(',')
@@ -25,7 +35,7 @@ def meniu():
     1 -> Citire 2 mulțimi cu numere întregi.
     2 -> Afișare egalitate număr de elemente pare dintre cele 2 mulțimi.
     3 -> Afișare elemente intersectate dintre cele 2 multimi.
-    4 -> Afișare
+    4 -> Afișare palindroame multimi.
     x -> Închide
     '''
     )
