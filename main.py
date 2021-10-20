@@ -59,9 +59,11 @@ def main():
             if len(inter) > 0:
                 print(f'Intersectia dintre multimile A si B este: {inter}.')
             else: print('Multimile A si B nu au elemente intersectate.')
-        # elif optiune == '4':
-        #
-        # elif optiune == '5':
+        elif optiune == '4':
+            l_palind = palind(A,B)
+            if len(l_palind) > 0:
+
+        elif optiune == '5':
 
         elif optiune == 'x':
             break
