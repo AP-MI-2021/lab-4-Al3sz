@@ -22,7 +22,7 @@ def palind(l1: list[int], l2: list[int]) -> list[int]:
     for i in range(l2):
         if l1[i] == l1[i::-1]:
             listaf.append(l1+l2)
-    return lista f
+    return listaf
 def citire_lista(lista_string: list[int]) -> list[int]:
     lista = []
     len_lista = lista_string.split(',')
@@ -59,8 +59,8 @@ def main():
             if len(inter) > 0:
                 print(f'Intersectia dintre multimile A si B este: {inter}.')
             else: print('Multimile A si B nu au elemente intersectate.')
-        elif optiune == '4':
-            
+        # elif optiune == '4':
+        #
         # elif optiune == '5':
 
         elif optiune == 'x':
